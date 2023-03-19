@@ -1,0 +1,76 @@
+{
+  //自动引入组件
+  "easycom": {
+    "autoscan": false, //关闭自动引入
+    //自定义引入
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/detail/chat/index",
+      "style": {
+        "navigationBarTitleText": "chatAI",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/home",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/chat",
+      "style": {
+        "navigationBarTitleText": "对话",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/me",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#8a8898",
+    "selectedColor": "#333333",
+    // "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    // "height": "13.33333vw",
+    // "iconWidth": "8.53333vw",
+    "list": [
+      // {
+      //   "pagePath": "pages/home",
+      //   "iconPath": "static/logo.png",
+      //   "selectedIconPath": "static/logo.png",
+      //   "text": "首页"
+      // },
+      {
+        "pagePath": "pages/chat",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "对话"
+      },
+      {
+        "pagePath": "pages/me",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}
