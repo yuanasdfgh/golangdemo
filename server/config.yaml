@@ -1,0 +1,45 @@
+# 服务端启动配置
+server:
+  port: 8000
+
+log:
+  level: info
+  root_dir: './logs'
+  filename: 'app.log'
+  format: ''
+  show_line: true
+  max_backups: 3
+  max_size: 500
+  max_age: 28
+  compress: true
+
+# MySQL数据库配置
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: 6KYwoWd9hd%k
+  dbname: go_data
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifetime: 3600
+  dbFile:
+  url: tcp(localhost:3306)/imall?charset=utf8&parseTime=True&loc=Local
+
+# JWT配置
+jwt:
+  signingKey: yuan
+  expiredTime: 7d
+
+# 定时任务
+cron:
+  enable: true
+
+# 微信小程序配置
+code2Session:
+  appId: wx3cb7b0s279330f63
+  appSecret: 86d8z38cac01ff375b2676d35f65e021
+
+gpt:
+  url: 13.229.248.26
+  key: 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
