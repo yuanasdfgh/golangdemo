@@ -1,4 +1,7 @@
 # golangdemo
+
+chatgpt api gpt-3.5-turbo
+
 ## app-vite-ts 
 
 uniapp h5
